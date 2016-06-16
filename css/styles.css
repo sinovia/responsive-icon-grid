@@ -28,6 +28,8 @@ h3 {
 .col:hover {
   background-color: #724f9e; }
 
+ /*StackOverflow Lessons/*http://stackoverflow.com/questions/24495980/css-hover-recursively-on-all-child-elements*/
+ /*Lessons in Safe Googling http://i.imgur.com/mEPuRSR.png*/
 .col:hover * {
   color: white; }
 
