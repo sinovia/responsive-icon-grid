@@ -13,7 +13,8 @@ ul {
 .icon {
   font-size: 175px;
   font-family: Lato, Calibri, Arial, sans-serif;
-  margin-left: 20%;
+  text-align: center;
+  margin-left: 32%;
   color: #724f9e; }
 
 h3 {
@@ -43,7 +44,7 @@ h3 {
 
 .pline {
   color: white;
-  width: 160px;
+  width: 225px;
   font-size: 5px;
   background-color: white;
   margin-left: 30%; }
@@ -52,7 +53,7 @@ h3 {
   border: 3px solid #724f9e;
   font-size: 1px;
   color: #724f9e;
-  width: 160px;
+  width: 225px;
   background-color: #724f9e; }
 
 .line:hover {
