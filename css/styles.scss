@@ -1,0 +1,133 @@
+$primarypurple: #724f9e;
+$lighterpurple: #c7bed3;
+$fontfamily: Lato, Calibri, Arial, sans-serif;
+
+body {
+  background-color: white;
+}
+
+ul{
+  list-style-type: none;
+  display: inline;
+}
+
+.container {
+  margin-left: 20px;
+  width: 100%;
+  margin: 50px;
+}
+
+@mixin icon {
+  font-size: 175px;
+  font-family: $fontfamily;
+  margin-left: 20%;
+}
+
+.icon {
+  @include icon;
+  color: $primarypurple;
+}
+
+
+
+h3 {
+  font-family: $fontfamily;
+  font-size: 32px;
+  text-align: center;
+  margin-left: auto 0;
+  margin-right: auto 0;
+  color: $primarypurple;
+}
+
+.col:hover{
+  background-color: $primarypurple;
+}
+.col:hover * {
+  color:white;
+}
+
+.caption {
+  color: white;
+  text-align: center;
+  font-family: $fontfamily;
+  margin-left: 40%;
+  font-size: 16px;
+}
+
+.listing:hover .icon {
+  background-color: $primarypurple;
+  color: white;
+}
+.pline{
+color:white;
+width: 160px;
+font-size: 5px;
+background-color: white;
+margin-left: 30%;
+}
+
+.line{
+  border:3px solid $primarypurple;
+  font-size: 1px;
+  color: $primarypurple;
+  width: 160px;
+  background-color: $primarypurple;
+}
+
+.line:hover {
+  color:white;
+}
+
+.line:hover {
+  background-color: $primarypurple;
+  color: white;
+}
+
+//
+// Grid from http://www.responsivegridsystem.com/
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+  height: 420px;
+
+}
+
+
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+
+.span_1_of_3 {
+	width: 30%;
+  height: 420px;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+ .span_1_of_3 { width: 100%; }
+}
